@@ -18,7 +18,9 @@ public class Einmaleins {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(" \n Schritt 1: d = ++i");
+
+			
+		System.out.println(" \n Schritt a: d = ++i");
 		d = ++i;
 		abfrage();
 
