@@ -54,13 +54,14 @@ public class Develop {
 	}
 
 	public static void AufgabeD(String lvl[]) {
-		ArrayList<Double> zahlen = new ArrayList<>();
+		int[] zahlen = new ArrayList<>();
 		for (int x = 0; x <= lvl.length; x++) {
-			zahlen.add(Double.parseDouble(lvl[0]));
+			zahlen.add(Integer.parseInt(lvl[0]));
 		}
+		java.util.Arrays.sort(zahlen);
 		
-		Double min = ;
-		Double max = ;
-		Doubke durch = ;
+		int min = zahlen.get(0);
+		int max = zahlen.get(zahlen.size()-1);
+		int durch = ;
 	}
 }
