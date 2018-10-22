@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Develop {
 
@@ -41,6 +42,25 @@ public class Develop {
 	}
 
 	public static void AufgabeC(String lvl[]) {
+		double z0 = Double.parseDouble(lvl[0]);
+		double z1 = Double.parseDouble(lvl[1]);
+		if (z0 > z1) {
+			System.out.println(z0);
+		} else if (z0 < z1) {
+			System.out.println(z1);
+		} else if (z0 == z1) {
+			System.out.println("Beide Zahlen sind gleich groß");
+		}
+	}
 
+	public static void AufgabeD(String lvl[]) {
+		ArrayList<Double> zahlen = new ArrayList<>();
+		for (int x = 0; x <= lvl.length; x++) {
+			zahlen.add(Double.parseDouble(lvl[0]));
+		}
+		
+		Double min = ;
+		Double max = ;
+		Doubke durch = ;
 	}
 }
