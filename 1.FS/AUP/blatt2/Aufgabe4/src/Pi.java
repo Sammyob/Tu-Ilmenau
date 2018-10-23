@@ -45,12 +45,12 @@ public class Pi {
 			pi += y;
 			x++;
 			System.out.println(pi);
-		} while (false);
+		} while (check(pi));
 		return pi;
 	}
 
 	// überprüft ob die Annäherung erreicht ist
 	public static boolean check(double pi) {
-		return !(Math.PI == Math.round(pi * Math.pow(10, 8)) / Math.pow(10, 8));
+		return !( Math.round(Math.PI * Math.pow(10, 8) / Math.pow(10, 8)) == Math.round(pi * Math.pow(10, 8)) / Math.pow(10, 8));
 	}
 }
