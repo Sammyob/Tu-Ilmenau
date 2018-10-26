@@ -30,9 +30,10 @@ public class Pi {
 		stringBuilder.append(" \n Durchläufe: ");
 		stringBuilder.append(x);
 		stringBuilder.append(" \n Dauer: ");
-		stringBuilder.append(new Date().getTime() - start);
+		stringBuilder.append(new Date().getTime() - start+"ms");
 		JOptionPane.showMessageDialog(null, stringBuilder.toString(), "Bericht",
 				JOptionPane.WARNING_MESSAGE);
+		System.err.println(String.valueOf(stringBuilder));
 
 	}
 
@@ -51,6 +52,6 @@ public class Pi {
 
 	// überprüft ob die Annäherung erreicht ist
 	public static boolean check(double pi) {
-		return !( Math.round(Math.PI * Math.pow(10, 8) / Math.pow(10, 8)) == Math.round(pi * Math.pow(10, 8)) / Math.pow(10, 8));
-	}
+		return !(Math.abs(Math.PI-pi)<0.00000001);
+		}
 }
