@@ -15,7 +15,7 @@ public class Pi {
 	// Am Anfang
 	public static double pi = 0.00000001;
 
-	// main Funktion
+	// main Funktion 
 	public static void main(String[] args) {
 		// löschen aller Steuerargumente
 		if (args.length != 0) {
